@@ -20,8 +20,11 @@ int					get_next_line_rec(int fd, char **line);
 char				*ft_strdup(char *str);
 char				*ft_strndup(char *str, int n);
 char				*ft_strjoin_free(char *str1, char *str2, char c);
+char				*ft_strjoin_free_aux(char *str1, char *str2, char c);
 
 int					ft_get_pos(char *str, char *set);
+int					ft_aux(char **line, t_list *tmp, int pos);
+int					ft_supr_lst(t_list **head, t_list *to_del);
 
 
 #endif
